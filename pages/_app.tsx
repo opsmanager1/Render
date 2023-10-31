@@ -7,7 +7,7 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
-      clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
+      clientId={e003008461a65a940a8a30af2de1ee79}
       activeChain={{
         // === Required information for connecting to the network === \\
         chainId: 3746287, // Chain ID of the network
