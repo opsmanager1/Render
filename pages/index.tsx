@@ -10,6 +10,12 @@ import styles from "../styles/Home.module.css";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
+      <Image
+            src="/DYMBACK.png"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />
       <div className={styles.content}>
         <div className={styles.hero}>
           <div className={styles.heroBackground}>
