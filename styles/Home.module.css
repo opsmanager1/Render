@@ -7,10 +7,9 @@
   align-items: center;
   align-self: center;
   text-align: center;
-  background-image: url(/root/Gamnerium.store/public/DYMBACK.png);
   background-repeat: no-repeat; /* Не повторювати зображення фону */
   background-size: cover; /* Забезпечити, щоб фон покривав весь елемент */
-  background-position: center center
+  background-position: center
   overflow-y: auto; /* Додає вертикальну прокрутку, якщо контент перевищує висоту контейнера */
   box-sizing: border-box; /* Враховує границі та внутрішні відступи в розрахунках висоти елемента */
   padding: 20px; 
