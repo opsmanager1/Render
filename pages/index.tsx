@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
           <Image
-                src="/hero-gradient.png"
+                src="/DYMBACK.png"
                 width={1390}
                 height={1390}
                 alt="Background gradient from red to blue"
