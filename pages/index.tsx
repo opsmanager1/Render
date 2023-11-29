@@ -12,8 +12,8 @@ const Home: NextPage = () => {
     <div className={styles.container}>
           <Image
                 src="/DYMBACK.png"
-                width={1390}
-                height={1390}
+                width="100%"
+                height="100vh"
                 alt="Background gradient from red to blue"
                 quality={100}
                 className={styles.gradient}
