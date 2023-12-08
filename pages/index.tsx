@@ -26,6 +26,7 @@ const Home: NextPage = () => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         width: "100vw",
+        overflow: 'hidden', // Set overflow to hidden
         height: "100vh",
         display: 'flex',
         alignItems: 'center',
