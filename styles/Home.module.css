@@ -10,12 +10,26 @@
   padding: 20px; 
 }
 
+.backgroundContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
 .content {
   overflowY: auto;
-  max-width: 1204px;
+  position: relative;
   width: 100%;
-  margin-left: 16px;
-  margin-right: 16px;
+  height: 100%;
+  maxWidth: 100vw;
+  maxHeight: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero {
