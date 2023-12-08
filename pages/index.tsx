@@ -16,25 +16,41 @@ import backgroundImage from '../public/DYMBACK.png';
  */
 const Home: NextPage = () => {
   return (
-     <div
-      style={{
-        margin: 0;
-        padding: 0;
+     //<div
+      //style={{ 
         // use the src property of the image object
-        backgroundImage: `url(${backgroundImage.src})`,
+       // backgroundImage: `url(${backgroundImage.src})`,
         //background-image: url('../public/DYMBACK.png');
         // other styles
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        width: "100vw",
-        overflow: 'hidden', // Set overflow to hidden
-        height: "100vh",
+      //  backgroundPosition: "center",
+      //  backgroundSize: "cover",
+      //  backgroundRepeat: "no-repeat",
+      //  width: "100vw",
+       // overflow: 'hidden', // Set overflow to hidden
+      //  height: "100vh",
+      //  display: 'flex',
+      //  alignItems: 'center',
+      //  justifyContent: 'center'
+     // }}
+  //  >
+    <div
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100vw',
+        height: '100vh',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center'
-      }}
-    >
+        justifyContent: 'center',
+        }}
+       >
+      <Image
+        src={backgroundImage}
+        alt="Background Image"
+        layout="fill"
+        objectFit="cover"
+      />
       <div className={styles.content}>
         <div className={styles.hero}>
           <div className={styles.heroBackground}>
