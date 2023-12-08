@@ -46,7 +46,13 @@ const Home: NextPage = () => {
         overflow: 'hidden', // Set overflow to hidden
       }}
     >
-      <div
+        <Image
+          src={backgroundImage}
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+        />
+     <div
         style={{
           position: 'relative',
           maxWidth: '100%', // Set maximum width
@@ -54,15 +60,8 @@ const Home: NextPage = () => {
           width: '100%', // Ensure 100% width
           height: '100%', // Ensure 100% height
         }}
-      >
-        <Image
-          src={backgroundImage}
-          alt="Background Image"
-          layout="fill"
-          objectFit="cover"
-        />
-      <div className={styles.content}>
-        <div className={styles.hero}>
+       >
+      <div className={styles.hero}>
           <div className={styles.heroBackground}>
             <div className={styles.heroBackgroundInner}>
               <Image
