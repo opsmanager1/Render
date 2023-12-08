@@ -12,11 +12,9 @@ const Home: NextPage = () => {
     <div className={styles.container}>
           <Image
                 src="/DYMBACK.png"
-                width="100%"
-                height="100vh"
-                alt="Background gradient from red to blue"
+                layout="fill"
+                objectFit="cover"
                 quality={100}
-                className={styles.gradient}
               />
       <div className={styles.content}>
         <div className={styles.hero}>
