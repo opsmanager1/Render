@@ -33,36 +33,16 @@ const Home: NextPage = () => {
       //  justifyContent: 'center'
      // }}
   //  >
-    <div
-      style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100vw',
-        height: '100vh',
-        overflow: 'hidden', // Set overflow to hidden
-      }}
-    >
-      <div
-        style={{
-          position: 'relative',
-          width: '100%',
-          height: '100%',
-          maxWidth: '100vw', // Set maximum width
-          maxHeight: '100vh', // Set maximum height
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
+   <div className={styles.backgroundContainer}>
+     <div className={styles.contentContainer}>
         <Image
           src={backgroundImage}
           alt="Background Image"
           layout="fill"
           objectFit="cover"
         />
-  <div className={styles.content}>
-      <div className={styles.hero}>
+      <div className={styles.content}>
+       <div className={styles.hero}>
           <div className={styles.heroBackground}>
             <div className={styles.heroBackgroundInner}>
               <Image
