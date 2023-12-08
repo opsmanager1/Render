@@ -48,6 +48,7 @@ const Home: NextPage = () => {
       <Image
         src={backgroundImage}
         alt="Background Image"
+        background-attachment: fixed;
         layout="fill"
         objectFit="cover"
       />
