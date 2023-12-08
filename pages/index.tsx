@@ -2,20 +2,28 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-
+import backgroundImage from "../../public/DYMBACK.png";
 /**
  * Landing page with a simple gradient background and a hero asset.
  * Free to customize as you see fit.
  */
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-          <Image
-                src="/DYMBACK.png"
-                layout="fill"
-                objectFit="cover"
-                quality={100}
-              />
+     <div
+      style={{
+        // use the src property of the image object
+        background-image: url('../public/DYMBACK.png');
+        // other styles
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        width: "100vw",
+        height: "100vh",
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}
+    >
       <div className={styles.content}>
         <div className={styles.hero}>
           <div className={styles.heroBackground}>
