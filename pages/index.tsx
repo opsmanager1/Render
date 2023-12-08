@@ -43,15 +43,24 @@ const Home: NextPage = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        overflow: 'hidden', // Set overflow to hidden
+      }}
+    >
+      <div
+        style={{
+          position: 'relative',
+          maxWidth: '100%', // Set maximum width
+          maxHeight: '100%', // Set maximum height
+          width: '100%', // Ensure 100% width
+          height: '100%', // Ensure 100% height
         }}
-       >
-      <Image
-        src={backgroundImage}
-        alt="Background Image"
-        background-attachment: fixed;
-        layout="fill"
-        objectFit="cover"
-      />
+      >
+        <Image
+          src={backgroundImage}
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+        />
       <div className={styles.content}>
         <div className={styles.hero}>
           <div className={styles.heroBackground}>
