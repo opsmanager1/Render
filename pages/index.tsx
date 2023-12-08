@@ -18,6 +18,8 @@ const Home: NextPage = () => {
   return (
      <div
       style={{
+        margin: 0;
+        padding: 0;
         // use the src property of the image object
         backgroundImage: `url(${backgroundImage.src})`,
         //background-image: url('../public/DYMBACK.png');
