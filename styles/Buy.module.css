@@ -24,8 +24,8 @@
 
 .nftContainer:hover {
   cursor: pointer;
-  transform: translate3d(0px, -4px, 0px);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  -webkit-transform: rotate(360deg); /* Градусы поворота можно изменить по необходимости */
+  transform: rotate(360deg); /* Градусы поворота можно изменить по необходимости */
 }
 
 .title {
