@@ -23,7 +23,6 @@ export default function NFTGrid({
 }: Props) {
   return (
     <div className={styles.nftGridContainer}>
-      <div className={styles.contentContainer}>
         <Image
           src={backgroundImage}
           alt="Background Image"
@@ -59,7 +58,6 @@ export default function NFTGrid({
       ) : (
         <p>{emptyText}</p>
       )}
-    </div>
-  </div>
+   </div>
   );
 }
