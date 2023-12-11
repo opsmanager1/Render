@@ -6,6 +6,7 @@ import Skeleton from "../Skeleton/Skeleton";
 import NFT from "./NFT";
 import styles from "../../styles/Buy.module.css";
 import backgroundImage from '../public/DYMCARD.jpg';
+import Image from 'next/image';
 
 type Props = {
   isLoading: boolean;
