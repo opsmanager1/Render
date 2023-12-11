@@ -23,6 +23,13 @@ export default function NFTGrid({
 }: Props) {
   return (
     <div className={styles.nftGridContainer}>
+      <div className={styles.contentContainer}>
+        <Image
+          src={backgroundImage}
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+        />
       {isLoading ? (
         [...Array(20)].map((_, index) => (
           <div key={index} className={styles.nftContainer}>
@@ -53,5 +60,6 @@ export default function NFTGrid({
         <p>{emptyText}</p>
       )}
     </div>
+  </div>
   );
 }
