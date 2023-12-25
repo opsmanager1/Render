@@ -21,10 +21,6 @@ export default function NFTGrid({
 }: Props) {
   return (
     <div className={styles.nftGridContainer}>
-      <div
-        className={styles.backgroundImageContainer}
-        style={{ backgroundImage: `url('/public/DYMCARD.png')` }}
-      />
       {isLoading ? (
         [...Array(20)].map((_, index) => (
           <div key={index} className={styles.nftContainer}>
