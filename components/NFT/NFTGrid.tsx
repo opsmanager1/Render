@@ -1,12 +1,10 @@
 import type { NFT as NFTType } from "@thirdweb-dev/sdk";
 import Link from "next/link";
-import Image from 'next/image';
 import React from "react";
 import { NFT_COLLECTION_ADDRESS } from "../../const/contractAddresses";
 import Skeleton from "../Skeleton/Skeleton";
 import NFT from "./NFT";
 import styles from "../../styles/Buy.module.css";
-import backgroundImage from '../public/DYMCARD.png';
 
 type Props = {
   isLoading: boolean;
@@ -23,12 +21,10 @@ export default function NFTGrid({
 }: Props) {
   return (
     <div className={styles.nftGridContainer}>
-        <Image
-          src={backgroundImage}
-          alt="Background Image"
-          layout="fill"
-          objectFit="cover"
-        />
+      <div
+        className={styles.backgroundImageContainer}
+        style={{ backgroundImage: `url('/public/DYMCARD.png')` }}
+      />
       {isLoading ? (
         [...Array(20)].map((_, index) => (
           <div key={index} className={styles.nftContainer}>
