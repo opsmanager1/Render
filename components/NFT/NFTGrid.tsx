@@ -6,7 +6,6 @@ import { NFT_COLLECTION_ADDRESS } from "../../const/contractAddresses";
 import Skeleton from "../Skeleton/Skeleton";
 import NFT from "./NFT";
 import styles from "../../styles/Buy.module.css";
-import backgroundImage from '../public/DYMCARD.png';
 
 type Props = {
   isLoading: boolean;
@@ -27,7 +26,7 @@ export default function NFTGrid({
         [...Array(20)].map((_, index) => (
           <div key={index} className={styles.nftContainer}>
              <Image
-          src={backgroundImage}
+          src="/DYMCARD.png"
           alt="Background Image"
           layout="fill"
           objectFit="cover"
