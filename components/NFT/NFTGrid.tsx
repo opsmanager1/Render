@@ -6,7 +6,7 @@ import { NFT_COLLECTION_ADDRESS } from "../../const/contractAddresses";
 import Skeleton from "../Skeleton/Skeleton";
 import NFT from "./NFT";
 import styles from "../../styles/Buy.module.css";
-import backgroundImage from '../components/NFT/DYMCARD.png';
+import backgroundImage from '../public/DYMCARD.png';
 
 type Props = {
   isLoading: boolean;
