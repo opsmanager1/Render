@@ -26,9 +26,13 @@ export default function NFTGrid({
       {isLoading ? (
         [...Array(20)].map((_, index) => (
           <div key={index} className={styles.nftContainer}>
-             <div className={styles.backgroundImageContainer} />
+             <Image
+          src={backgroundImage}
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+             />
             <Skeleton key={index} width={"100%"} height="312px" />
-              </div>
           </div>
         ))
       ) : data && data.length > 0 ? (
