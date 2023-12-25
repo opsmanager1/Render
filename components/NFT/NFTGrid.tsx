@@ -27,12 +27,6 @@ export default function NFTGrid({
           <div key={index} className={styles.nftContainer}>
             <Skeleton key={index} width={"100%"} height="312px" />
           </div>
-             <Image
-          src="/DYMCARD.png"
-          alt="Background Image"
-          layout="fill"
-          objectFit="cover"
-             />
         ))
       ) : data && data.length > 0 ? (
         data.map((nft) =>
@@ -50,6 +44,12 @@ export default function NFTGrid({
               className={styles.nftContainer}
               onClick={() => overrideOnclickBehavior(nft)}
             >
+                <Image
+          src="/DYMCARD.png"
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+             />
               <NFT nft={nft} />
             </div>
           )
