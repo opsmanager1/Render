@@ -25,14 +25,14 @@ export default function NFTGrid({
       {isLoading ? (
         [...Array(20)].map((_, index) => (
           <div key={index} className={styles.nftContainer}>
+            <Skeleton key={index} width={"100%"} height="312px" />
+          </div>
              <Image
           src="/DYMCARD.png"
           alt="Background Image"
           layout="fill"
           objectFit="cover"
              />
-            <Skeleton key={index} width={"100%"} height="312px" />
-          </div>
         ))
       ) : data && data.length > 0 ? (
         data.map((nft) =>
